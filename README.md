@@ -67,37 +67,8 @@ https://zwa.toad.cz/~kramkvol/
 
 ###  Directories
 #### `parts/` – Reusable page components and configuration files
-- **bookcomments.php** – Displays and handles user comments for a book. Used on the book detail page.
-- **bookedit.php** – Contains the form layout for editing book details. Included in `bookeditpage.php`.
-- **bookhead.php** – Outputs the book title/header section, typically used on book cards or detail pages.
-- **check.php** – Backend script for handling AJAX requests to validate username and email availability during registration or profile editing.
-- **config.php** – Main configuration file for the project (e.g., database connection settings).
-- **errors.php** – Displays error messages, such as form validation or server errors.
-- **footer.php** – Website footer with copyright or links.
-- **header.php** – Website header and main navigation, included on most pages.
-- **pagination.php** – Component for rendering pagination links in lists (e.g., books).
-- **scripts.js** – JavaScript for client-side validation:
-  - Real-time validation of username and email (via AJAX to `check.php`)
-  - Password match checks
-  - Live feedback during registration, login, and profile editing
-
 #### `functions/` – PHP logic helpers grouped by feature
-- **f_bookadd.php** – Functions for adding books to the database.
-- **f_bookcomments.php** – Logic for processing and saving book comments.
-- **f_bookedit.php** – Functions for updating book records.
-- **f_database.php** – Database connection and utility functions.
-- **f_home.php** – Logic related to the homepage.
-- **f_login.php** – User login logic and session management.
-- **f_pagination.php** – Page splitting and navigation logic.
-- **f_profile.php** – View and update user profile data.
-- **f_reg.php** – User registration handler.
-- **f_validate.php** – Input validation functions.
-
 #### `images/` – Static images used on the site
-_(Example: book covers, logos, UI icons)_
-
-#### `documentation/` – Project documentation and technical notes
-_(Could include setup instructions, architecture description, etc.)_
 
 ## Example User Profiles
 You can use the following accounts to log in:
