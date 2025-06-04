@@ -3,8 +3,9 @@ This is a web-based application for managing a catalog of books with user regist
 
 https://zwa.toad.cz/~kramkvol/
 
-## Features
+[Produkt dokumentation](https://github.com/kramkvol/CVUT_ZWA/blob/main/documentation/Product%20documentation.pdf)
 
+## Features
 ### Authentication & Authorization
 - **Registration:** Users can register with a unique nickname and email. Password confirmation is required.
 - **Login:** Users log in with a nickname and password.
@@ -63,4 +64,3 @@ You can use the following accounts to log in:
 
 ## Repository
 [GitHub Project](https://github.com/kramkvol/CVUT_ZWA)
-[GitLab Project](https://gitlab.fel.cvut.cz/kramkvol)
