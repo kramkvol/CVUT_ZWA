@@ -43,31 +43,30 @@ https://zwa.toad.cz/~kramkvol/
 - Unauthorized users trying to access restricted pages are redirected to `login.php`.
 - Unauthorized actions (e.g., editing without login) will not display the relevant UI elements (buttons/messages instead).
 
-# 📁 Files Overview
 
-## 📄 Main Pages
+##  Files Overview
+###  Main Pages
 - **index.php** – Homepage displaying the list of books.
 - **bookpage.php** – Detailed view of a selected book.
 - **bookadd.php** – Form for adding a new book to the library.
 - **bookeditpage.php** – Page for editing an existing book's details.
 
-## 👤 Authentication and User Profile
+###  Authentication and User Profile
 - **register.php** – User registration form and logic.
 - **login.php** – Login form and session handling.
 - **logout.php** – Logs the user out and ends the session.
 - **profile.php** – View and edit user profile information.
 
-## 🧩 Common Components
+###  Common Components
 - **header.php** – Website header and navigation menu.
 - **about.php** – Information about the project or application.
 
-## 🗂️ Static and Helper Files
+###  Static and Helper Files
 - **styles.css** – Core website styling.
 - **.gitattributes** – Git attributes settings for version control.
 
-## 📁 Directories
-
-### `parts/` – Reusable page components and configuration files
+###  Directories
+#### `parts/` – Reusable page components and configuration files
 - **bookcomments.php** – Displays and handles user comments for a book. Used on the book detail page.
 - **bookedit.php** – Contains the form layout for editing book details. Included in `bookeditpage.php`.
 - **bookhead.php** – Outputs the book title/header section, typically used on book cards or detail pages.
@@ -82,7 +81,7 @@ https://zwa.toad.cz/~kramkvol/
   - Password match checks
   - Live feedback during registration, login, and profile editing
 
-### `functions/` – PHP logic helpers grouped by feature
+#### `functions/` – PHP logic helpers grouped by feature
 - **f_bookadd.php** – Functions for adding books to the database.
 - **f_bookcomments.php** – Logic for processing and saving book comments.
 - **f_bookedit.php** – Functions for updating book records.
@@ -94,10 +93,10 @@ https://zwa.toad.cz/~kramkvol/
 - **f_reg.php** – User registration handler.
 - **f_validate.php** – Input validation functions.
 
-### `images/` – Static images used on the site
+#### `images/` – Static images used on the site
 _(Example: book covers, logos, UI icons)_
 
-### `documentation/` – Project documentation and technical notes
+#### `documentation/` – Project documentation and technical notes
 _(Could include setup instructions, architecture description, etc.)_
 
 ## Example User Profiles
