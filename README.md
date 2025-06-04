@@ -52,5 +52,15 @@ https://zwa.toad.cz/~kramkvol/
 - `bookedit.php`: Edit book page.
 - `bookadd.php`: Add new book page.
 
+## Example User Profiles
+You can use the following accounts to log in:
+### Administrator
+- **Nickname:** `admin`
+- **Password:** `test`
+### Regular User
+- **Nickname:** `test1`
+- **Password:** `test`
+
 ## Repository
+[GitHub Project](https://github.com/kramkvol/CVUT_ZWA)
 [GitLab Project](https://gitlab.fel.cvut.cz/kramkvol)
