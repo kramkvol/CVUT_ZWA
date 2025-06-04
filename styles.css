@@ -1,0 +1,419 @@
+/* General */
+@media print {
+    .header, .footer, .pagination {
+        display: none;
+    }
+}
+
+.header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 0;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%; 
+}
+
+.footer p {
+    text-align: center;
+    color: #ffffff
+}
+
+.header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header nav div a {
+    margin: 0 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    color: white;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+label, h3 {
+    font-weight: bold;
+    color: #000000;
+    display: block;
+
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+span {
+    color: red; 
+}
+
+a {
+    font-weight: bold;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+p{
+    word-wrap: break-word; 
+    word-break: break-word; 
+    white-space: normal; 
+}
+
+a:hover {
+    background-color: #0056b3;
+    color: white;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px 0 5px 0; 
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"], 
+input[type="password"],
+input[type="email"],
+input[type="file"] {
+    border: 1px solid #ddd;
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 5px 0 5px 0; 
+    cursor: pointer;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Home */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    gap: 20px; 
+}
+
+.book-card {
+    width: 90%;
+    height: 10%; 
+
+    display: flex; 
+    justify-content: flex-start; 
+    align-items: center; 
+
+    gap: 20px; 
+    width: 90%; 
+    padding: 20px;
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+
+    overflow: hidden;
+}
+
+.book-card img {
+    width: 8%;
+    object-fit: cover; 
+    display: block;
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.book-card:hover {
+    transform: translateY(-2px); 
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.pagination a {
+    margin: 0 5px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Book page */
+.book-container {
+    display: flex; 
+    flex-direction: column; 
+    width: 90%; 
+    align-items: center; 
+        
+
+    text-align: center;
+
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    
+    overflow: hidden;
+}
+
+.book-container img {
+    width: 150px; 
+    height: auto; 
+    object-fit: cover; 
+
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+
+
+
+/* Comments */
+.book-comments {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-comments h3{
+    text-align: center;
+}
+
+.add-comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.comment img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.comment-body small {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.comment-actions form {
+    display: inline;
+}
+
+.login, .register, .bookadd{
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    display: flex; 
+    flex-direction: column;
+}
+
+
+/* Errors */
+.errors {
+    color: red;
+}
+
+#username-error,
+#email-error,
+#password-error,
+#cpassword-error {
+    color: red;
+}
+
+
+/* Profile */
+
+.profile-info {
+    display: flex; 
+    flex-direction: column; 
+    width: 90%; 
+  
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+
+    overflow: hidden;
+}
+
+.profile-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.profile-forms  {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    
+    gap: 20px; 
+    width: 90%;
+    margin: 0 auto; 
+    padding: 20px; 
+    background: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 8px; 
+    align-items: center;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.profile-forms section {
+    display: flex;
+    flex-direction: space-between;
+    gap : 20px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.profile-forms form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    
+    width: 100%;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.bookedit {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.bookedit section  {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap : 20px;
+    flex-wrap: wrap;
+}
+
+.bookedit div {
+    display: flex;
+    flex-direction: column;
+    flex-direction: space-between;
+    gap : 20px;
+    flex-wrap: wrap;
+}
+.bookedit form {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.bookedit .form2 {
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    flex-wrap: wrap;
+}

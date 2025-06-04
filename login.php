@@ -1,0 +1,55 @@
+<?php
+include_once './parts/config.php';
+include_once './functions/f_login.php';
+
+$errors = [];
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['do_login'])) {
+    $errors = array_merge($errors, handleLoginRequest($conn,$_POST));
+}
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+    <?php include 'parts/header.php'; ?>
+    <script src="parts/scripts.js"></script> 
+    <div class="login">
+        <label>Fields marked with <span>*</span> are required.</label>
+        <label>Field username сan only contain letters and numbers.</label>
+        <label>Fields max lenth - 255 chars.</label>
+        <br>
+        <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF'])?>" method="post">
+            <?php include 'parts/errors.php'; ?>  
+            <label for="username">Username: <span>*</span></label>
+            <input type="text" 
+                id="username" 
+                name="username" 
+                value="<?php echo isset($_POST['username']) ? htmlspecialchars($_POST['username']) : ''; ?>"
+                pattern="^[A-Za-z0-9]*$" 
+                required 
+                title="Field username сan only contain letters and numbers."  
+            >
+            <span id="username-error"></span>
+            <br>
+            <label for="password">Password: <span>*</span></label>
+            <input type="password" 
+                id="password" 
+                name="password" 
+                required 
+            >
+            <span id="password-error"></span>
+            <br>
+            <input type="submit" id="do_login" name="do_login" value="Login">
+        </form>
+    </div>
+    <?php include 'parts/footer.php'; ?>
+    </body>
+</html>
